@@ -1,5 +1,5 @@
 function trigger() {
-
+    
     document.getElementById("hover").addEventListener("mouseover", popup, {
         once: true
     });
@@ -22,15 +22,12 @@ function validateCustomer() {
     var validateCust = custId.includes("XYZ");
 
     if (validateCust) {
-
         document.getElementById("message").textContent =
             "Customer ID is valid, you can proceed further to generate coupon";
-
-    } else {
-
+    } 
+    else {
         document.getElementById("message").textContent =
             "You are not a valid customer";
-
     }
 
 }
